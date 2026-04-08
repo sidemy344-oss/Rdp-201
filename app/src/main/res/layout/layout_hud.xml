@@ -97,10 +97,11 @@
 
     <!-- Drag Handle Indicator -->
     <View
-        android:layout_width="40dp"
-        android:layout_height="3dp"
-        android:background="#666666"
-        android:background="#888888"
-        android:layout_marginTop="2dp"
-        android:alpha="0.5" />
+    android:layout_width="40dp"
+    android:layout_height="3dp"
+    android:background="#888888"
+    android:layout_gravity="top|center_horizontal"
+    android:layout_marginTop="2dp"
+    android:alpha="0.5" />
+
 </FrameLayout>
