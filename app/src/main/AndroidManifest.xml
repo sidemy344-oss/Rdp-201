@@ -1,24 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Required for TYPE_APPLICATION_OVERLAY (HUD overlay) -->
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-
-    <!-- Required to keep the service alive in background -->
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-
-    <!-- Required to read screen content via AccessibilityService -->
-    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"
-        tools:ignore="ProtectedPermissions"
-        xmlns:tools="http://schemas.android.com/tools"/>
-
     <application
-        android:allowBackup="false"
+        android:allowBackup="true"
         android:label="Driver Dashboard"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar">
-
-        <!-- Main launcher activity (minimal, just to request permissions) -->
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -27,13 +14,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- Foreground service that runs the HUD overlay -->
-        <service
-            android:name=".RideObserverService"
-            android:exported="false"
-            android:foregroundServiceType="dataSync" />
-
     </application>
-
 </manifest>
