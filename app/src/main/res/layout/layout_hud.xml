@@ -51,7 +51,7 @@
             android:id="@+id/tier_container"
             android:layout_width="match_parent"
             android:layout_height="32dp"
-            android:background="@drawable/tier_badge_background"
+            android:background="#444444"
             android:layout_marginBottom="4dp">
 
             <TextView
@@ -100,7 +100,7 @@
         android:layout_width="40dp"
         android:layout_height="3dp"
         android:background="#666666"
-        android:layout_gravity="top|center_horizontal"
+        android:background="#888888"
         android:layout_marginTop="2dp"
         android:alpha="0.5" />
 </FrameLayout>
