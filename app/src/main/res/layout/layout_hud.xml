@@ -3,12 +3,11 @@
     android:id="@+id/hud_root"
     android:layout_width="280dp"
     android:layout_height="120dp"
-    android:background="@drawable/hud_background"
+    android:background="#222222"
     android:elevation="10dp"
     android:outlineProvider="background"
     android:clipToOutline="true">
 
-    <!-- Main Content Container -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,7 +15,6 @@
         android:padding="8dp"
         android:gravity="center_vertical">
 
-        <!-- Section 1: PKM Value Display -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -46,7 +44,6 @@
                 android:layout_marginStart="8dp" />
         </LinearLayout>
 
-        <!-- Section 2: Profit Tier Badge (Color-Coded) -->
         <FrameLayout
             android:id="@+id/tier_container"
             android:layout_width="match_parent"
@@ -66,7 +63,6 @@
                 android:layout_gravity="center" />
         </FrameLayout>
 
-        <!-- Section 3: Passenger Safety Warning -->
         <TextView
             android:id="@+id/warning_text"
             android:layout_width="match_parent"
@@ -81,7 +77,6 @@
             android:maxLines="1"
             android:ellipsize="end" />
 
-        <!-- Section 4: Error Display -->
         <TextView
             android:id="@+id/error_text"
             android:layout_width="match_parent"
@@ -95,13 +90,12 @@
             android:layout_marginTop="2dp" />
     </LinearLayout>
 
-    <!-- Drag Handle Indicator -->
     <View
-    android:layout_width="40dp"
-    android:layout_height="3dp"
-    android:background="#888888"
-    android:layout_gravity="top|center_horizontal"
-    android:layout_marginTop="2dp"
-    android:alpha="0.5" />
+        android:layout_width="40dp"
+        android:layout_height="3dp"
+        android:background="#888888"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="2dp"
+        android:alpha="0.5" />
 
 </FrameLayout>
